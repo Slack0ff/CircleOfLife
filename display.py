@@ -11,7 +11,7 @@ def main():
     except: return
 
     # 2. Lancement de l'Env
-    env_p = subprocess.Popen([sys.executable, "env20.py"])
+    env_p = subprocess.Popen([sys.executable, "env.py"])
     time.sleep(2) # Attendre que Env crée la MQ
 
     # 3. Connexion Display -> Message Queue
@@ -67,4 +67,5 @@ def main():
         pass
     
 if __name__ == "__main__":
+
     main()
