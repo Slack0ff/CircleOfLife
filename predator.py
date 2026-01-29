@@ -4,7 +4,7 @@ from multiprocessing.managers import BaseManager
 # Configuration réseau
 HOST, MGR_PORT, SOCK_PORT, AUTH_KEY = '127.0.0.1', 50000, 6666, b'circleoflife'
 
-# Paramètres de simulation (Équilibrés pour la survie)
+# Paramètres de simulation 
 TICK = 0.5
 DECAY = 0.8 # Vitesse de perte d'énergie
 H_THRESHOLD = 60 
@@ -81,3 +81,4 @@ class PredatorProcess:
 
 if __name__ == "__main__":
     PredatorProcess().run()
+
